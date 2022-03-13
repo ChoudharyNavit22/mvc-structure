@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deakin Crowds</title>
+
+    <!-- Compiled and minified CSS -->
+    <!-- Materialze-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Materialize icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper" style=" background-color: #9E65A9;">
+                <a href="#" class="brand-logo" style="height: 100%;">
+                    <img src="assets/ale2.jpg" alt="" class="circle responsive-img"
+                        style="height: 100%;padding-top: 5px; padding-left: 15px;"> <!-- notice the "circle" class -->
+
+                </a>
+                <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="https://www.linkedin.com/in/alessiobonti">Linkedin</a></li>
+                </ul> -->
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container">
+            <h1 class="title center">MVC Structure</h1>
+            <div class="row center">
+                <p class="flow-text mainText">Welcome to undersatnding MVC</p>
+            </div>
+            <div class="row center" style="height: 150px;">
+                <img src="assets/ale2.jpg" alt="" class="circle responsive-img"
+                    style="height: 100%;padding-top: 5px; padding-left: 15px;"> <!-- notice the "circle" class -->
+            </div>
+            <div class="row center " style="padding-top:50px;">
+                <a id="testButton" class="waves-effect waves-light btn-large modal-trigger" href="#modal1" style="background-color: #9E65A9;"><i
+                        class="material-icons left" style="color:white; font-size:larger ">emoji_people</i>Add Project</a>
+            </div>
+
+            <div class="container">
+                <div class="row" id="listProjects">
+               
+
+                </div>
+            </div>
+        
+            
+        </div>
+
+    </main>
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Copyright Navit Choudhary
+                <a class="grey-text text-lighten-4 right" href="https://github.com/ChoudharyNavit22/mvc-structure.git"><img
+                        src="assets/git-logo.svg" style="height: 20px; padding-right: 15px;"></i>Boiler plate here !</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- socket IO Served by the server -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="env.js"></script>
+
+</body>
+
+</html>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Tell me more about your project</h4>
+        <p>Help us share it!</p>
+        <div class="row">
+            <div class="input-field col s12">
+                <input value="" id="name" type="text" class="validate">
+                <label class="name" for="name">Name</label>
+            </div>
+            <div class="input-field col s12">
+                <input value="" id="title" type="text" class="validate">
+                <label class="title" for="title">Project Title</label>
+            </div>
+            <div class="input-field col s12">
+                <input value="" id="description" type="text" class="validate">
+                <label class="description" for="description">Project Description</label>
+            </div>
+            <div class="input-field col s12">
+                <input value="" id="video" type="text" class="validate">
+                <label class="video" for="video">Video Url </label>
+            </div>
+            <div class="input-field col s12">
+                <input value="" id="image" type="text" class="validate">
+                <label class="image" for="image">Image Url</label>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a onclick="newProject()" href="#!" class="modal-close waves-effect waves-green btn-flat">Submit</a>
+    </div>
+</div>
