@@ -1,3 +1,5 @@
+# MVC Structure
+
 This is my simple nodejs application to showcase MVC structure and simple Rest API. 
 This boilerplate is very basic and should be used as a training ground
 
