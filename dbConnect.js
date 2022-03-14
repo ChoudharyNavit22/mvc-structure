@@ -5,7 +5,7 @@
  'use strict';
  var Mongoose = require('mongoose');
 
-const uri = "mongodb+srv://navit:navc011337@cloudbootcamp.bv4zn.mongodb.net/mvcStructure?retryWrites=true&w=majority";
+const uri = process.env.uri || "mongodb://localhost/myFirstDatabase";
 
 const mongooseOptions = {
   useNewUrlParser: true,

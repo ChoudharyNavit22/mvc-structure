@@ -15,7 +15,8 @@ let io = require('socket.io')(http);
 var port = process.env.PORT || 8080;
 app.use(express.json());
 app.use(express.static(__dirname + '/public'));
-//app.use('/api/projects',projectsRoute)
+let userRoute = require('./routes/userRoute')
+app.use('/api/users',userRoute)
 
 
 app.get("/test", function (request, response) {
