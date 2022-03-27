@@ -3,5 +3,7 @@
  */
  'use strict'
  module.exports = {
-    Users: require('./users')
+    Users: require('./users'),
+    Posts: require('./posts'),
+    Comments: require('./comments')
  };

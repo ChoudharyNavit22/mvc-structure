@@ -18,6 +18,11 @@ app.use(express.static(__dirname + '/public'));
 let userRoute = require('./routes/userRoute')
 app.use('/api/users',userRoute)
 
+let postRoute = require('./routes/postRoute')
+app.use('/api/posts',postRoute)
+
+let commentRoute = require('./routes/commentRoute')
+app.use('/api/comments',commentRoute)
 
 app.get("/test", function (request, response) {
   var user_name = request.query.user_name;
