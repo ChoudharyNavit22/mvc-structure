@@ -3,6 +3,7 @@
  */
 
  'use strict';
+ require('dotenv').config()
  var Mongoose = require('mongoose');
 
 const uri = process.env.uri || "mongodb://localhost/myFirstDatabase";
@@ -21,7 +22,7 @@ Mongoose.set('useFindAndModify', false);
          console.log("DB Error: ", err);
          process.exit(1);
      } else {
-         console.log('MongoDB Connected');
+         console.log('MongoDB Connected: ');
      }
  });
  

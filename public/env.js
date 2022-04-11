@@ -22,7 +22,7 @@ const newProject=()=>{
   let project={name,title,video,image,description
   }
   console.log(project)
-  submitProject(project)
+  //submitProject(project)
 
 }
 
@@ -95,7 +95,7 @@ $(document).ready(function(){
 
   /// modal window initialize
   $('.modal').modal();
-  requestProjects()
+  //requestProjects()
 
 
 })
